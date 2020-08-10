@@ -314,6 +314,8 @@
   }
 
   window.setTimeout(closeCovidDiv, 5000)
-
+  document.onscroll = () => {
+	if(scrollY) closeCovidDiv()
+  };
 })(jQuery);
 
