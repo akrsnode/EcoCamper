@@ -1,8 +1,8 @@
-function closeCovidDiv(){
-    document.getElementById("covid19").style.display="none";
-}
+let covidDiv = document.querySelector(".ftco-covid19")
 
-window.setTimeout(closeCovidDiv, 5000)
+function fixedCovidDiv(){
+  covidDiv.style.position="unset";
+}
 document.onscroll = () => {
-  if(scrollY) closeCovidDiv()
+  if(scrollY >  covidDiv.scrollHeight) fixedCovidDiv()
 };
