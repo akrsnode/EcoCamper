@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../sass/main.sass"
+        "../sass/home.sass"
     ],
     "names": [],
-    "file": "main.css"
+    "file": "home.css"
 }
