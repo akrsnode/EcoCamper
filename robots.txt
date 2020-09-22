@@ -1,3 +1,0 @@
-User-agents: *
-Disallow: /scripts
-Sitemap: https://ecocamper.eu/sitemap.xml

@@ -1,0 +1,60 @@
+//Base page css settings
+$main-color: #404040
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500;700&display=swap');
+
+*
+    box-sizing: border-box
+
+ul, li
+    list-style: none
+    margin-top: 0
+
+body
+    font-family: "Poppins", Arial, Helvetica, sans-serif
+    font-size: 15px
+    line-height: 1.8
+    font-weight: 300
+    color: $main-color
+
+.container
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto 
+
+.navbar
+    display: flex
+    align-items: center
+    background: black
+    position: absolute
+    right: 0
+    left: 0
+    top: 20px
+    z-index: 3
+    padding: 0
+
+.navbar--extend
+    flex-flow: row nowrap
+    justify-content: flex-start
+
+.menu
+    display: flex
+    flex-grow: 1
+    align-items: center
+    flex-basis: auto
+    flex-direction: row
+
+.menu_nav
+    display: flex
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none
+    margin-left: auto
+
+.menu_nav_link
+    display: block
+    font-size: 14px
+    padding: .8rem 20px
+    font-weight: 400
