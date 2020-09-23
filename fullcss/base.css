@@ -15,6 +15,7 @@ body {
   line-height: 1.8;
   font-weight: 300;
   color: #404040;
+  background-color: black;
 }
 
 .container {
@@ -39,6 +40,20 @@ body {
   top: 20px;
   z-index: 3;
   padding: 0;
+}
+
+.navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .navbar--extend {
@@ -69,7 +84,7 @@ body {
           flex-direction: row;
 }
 
-.menu_nav {
+.menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,10 +94,33 @@ body {
   margin-left: auto;
 }
 
-.menu_nav_link {
+.menu__nav__link {
   display: block;
   font-size: 14px;
   padding: .8rem 20px;
   font-weight: 400;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+  z-index: 1;
 }
 /*# sourceMappingURL=base.css.map */
