@@ -16,13 +16,14 @@ body
     line-height: 1.8
     font-weight: 300
     color: $main-color
+    background-color: black
 
 .container
     width: 100%
     padding-right: 15px
     padding-left: 15px
     margin-right: auto
-    margin-left: auto 
+    margin-left: auto
 
 .navbar
     display: flex
@@ -35,6 +36,12 @@ body
     z-index: 3
     padding: 0
 
+.navbar__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: nowrap
+
 .navbar--extend
     flex-flow: row nowrap
     justify-content: flex-start
@@ -46,15 +53,31 @@ body
     flex-basis: auto
     flex-direction: row
 
-.menu_nav
+.menu__nav
     display: flex
     padding-left: 0
     margin-bottom: 0
     list-style: none
     margin-left: auto
 
-.menu_nav_link
+.menu__nav__link
     display: block
     font-size: 14px
     padding: .8rem 20px
     font-weight: 400
+
+.hero
+    display: flex
+    height: 100vh
+    align-items: center
+
+.hero__text
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    padding: 0 15px
+    margin: 0 auto
+    transform: translateY(-50%)
+    color: #ffffff
+    z-index: 1
