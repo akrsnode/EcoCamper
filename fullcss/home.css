@@ -22,18 +22,18 @@
   line-height: 1.5;
 }
 
+.hero__text h1 {
+  font-weight: 600;
+  font-size: 4em;
+  margin-top: 0;
+}
+
 .hero__text h2 {
   font-weight: 400;
   font-size: 1.8em;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 0;
   margin-bottom: 0.5rem;
-}
-
-.hero__text h1 {
-  font-weight: 600;
-  font-size: 4em;
-  margin-top: 0;
 }
 
 .hero__btn {
@@ -77,5 +77,32 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.covidBanner {
+  position: fixed;
+  display: block;
+  width: 100%;
+  padding: 2em 0;
+  background: #bbb;
+  bottom: 0;
+  z-index: 1;
+}
+
+.covidBanner__text {
+  max-width: 873px;
+  margin: auto;
+}
+
+.covidBanner h1 {
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 2em;
+  margin: 0 1.5rem;
+  color: #fff;
+}
+
+.covidBanner p {
+  font-size: 0.85em;
+  margin: 1rem;
 }
 /*# sourceMappingURL=home.css.map */

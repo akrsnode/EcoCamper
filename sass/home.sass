@@ -5,57 +5,51 @@ $addColor: #67d352
     display: flex
     height: 100vh
     align-items: center
-
-.hero__text
-    position: absolute
-    top: 50%
-    left: 0
-    right: 0
-    padding: 0 15px
-    margin: 0 auto
-    transform: translateY(-50%)
-    color: #ffffff
-    z-index: 1
-    line-height: 1.5
-
-.hero__text h2
-    font-weight: 400
-    font-size: 1.8em
-    color: rgba(255, 255, 255, 0.8)
-    margin-top: 0
-    margin-bottom: 0.5rem
-
-.hero__text h1
-    font-weight: 600
-    font-size: 4em
-    margin-top: 0
-
-.hero__btn
-    position: relative
-    font-size: 1.3em
-    font-weight: 500
-    color: #FFF
-    border: none
-    margin-left: 30px
-    padding: 6px 35px 10px 15px
-    background-color: #67D352
-    transition: all 0.3s ease
-    &:after
+    &__text
         position: absolute
         top: 50%
-        right: 10px
-        width: 19px
-        height: 15px
-        background-image: url(../img/arrow.svg)
-        background-repeat: no-repeat
-        content: ''
-    &:hover
-        color: $addColor
-        background-color: #FFF
+        left: 0
+        right: 0
+        padding: 0 15px
+        margin: 0 auto
+        transform: translateY(-50%)
+        color: #ffffff
+        z-index: 1
+        line-height: 1.5
+        h1
+            font-weight: 600
+            font-size: 4em
+            margin-top: 0
+        h2
+            font-weight: 400
+            font-size: 1.8em
+            color: rgba(255, 255, 255, 0.8)
+            margin-top: 0
+            margin-bottom: 0.5rem
+    &__btn
+        position: relative
+        font-size: 1.3em
+        font-weight: 500
+        color: #FFF
+        border: none
+        margin-left: 30px
+        padding: 6px 35px 10px 15px
+        background-color: #67D352
+        transition: all 0.3s ease
         &:after
-            background-image: url(../img/arrow-hov.svg)
-    
-
+            position: absolute
+            top: 50%
+            right: 10px
+            width: 19px
+            height: 15px
+            background-image: url(../img/arrow.svg)
+            background-repeat: no-repeat
+            content: ''
+        &:hover
+            color: $addColor
+            background-color: #FFF
+            &:after
+                background-image: url(../img/arrow-hov.svg)
 
 .slider
     position: relative
@@ -65,3 +59,23 @@ $addColor: #67d352
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+
+.covidBanner
+    position: fixed
+    display: block
+    width: 100%
+    padding: 2em 0
+    background: #bbb
+    bottom: 0
+    z-index: 1
+    &__text
+        max-width: 873px
+        margin: auto
+    h1  
+        font-family: "Playfair Display", Arial, serif
+        font-size: 2em
+        margin: 0 1.5rem
+        color: #fff
+    p
+        font-size: 0.85em
+        margin: 1rem
