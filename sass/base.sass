@@ -10,13 +10,16 @@ ul, li
     list-style: none
     margin-top: 0
 
+a
+    text-decoration: none
+    color: #FFF
+
 body
+    margin: 0
     font-family: "Poppins", Arial, Helvetica, sans-serif
-    font-size: 15px
-    line-height: 1.8
+    font-size: 100%
     font-weight: 300
     color: $main-color
-    background-color: black
 
 .container
     width: 100%
@@ -28,7 +31,7 @@ body
 .navbar
     display: flex
     align-items: center
-    background: black
+    background: transparent
     position: absolute
     right: 0
     left: 0
@@ -62,22 +65,8 @@ body
 
 .menu__nav__link
     display: block
-    font-size: 14px
+    font-size: 0.85em
     padding: .8rem 20px
-    font-weight: 400
-
-.hero
-    display: flex
-    height: 100vh
-    align-items: center
-
-.hero__text
-    position: absolute
-    top: 50%
-    left: 0
-    right: 0
-    padding: 0 15px
-    margin: 0 auto
-    transform: translateY(-50%)
-    color: #ffffff
-    z-index: 1
+    font-weight: 300
+    &:hover
+        opacity: 0.8

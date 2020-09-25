@@ -1,1 +1,67 @@
+$addColor: #67d352
+    
 //Home page css settings
+.hero
+    display: flex
+    height: 100vh
+    align-items: center
+
+.hero__text
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    padding: 0 15px
+    margin: 0 auto
+    transform: translateY(-50%)
+    color: #ffffff
+    z-index: 1
+    line-height: 1.5
+
+.hero__text h2
+    font-weight: 400
+    font-size: 1.8em
+    color: rgba(255, 255, 255, 0.8)
+    margin-top: 0
+    margin-bottom: 0.5rem
+
+.hero__text h1
+    font-weight: 600
+    font-size: 4em
+    margin-top: 0
+
+.hero__btn
+    position: relative
+    font-size: 1.3em
+    font-weight: 500
+    color: #FFF
+    border: none
+    margin-left: 30px
+    padding: 6px 35px 10px 15px
+    background-color: #67D352
+    transition: all 0.3s ease
+    &:after
+        position: absolute
+        top: 50%
+        right: 10px
+        width: 19px
+        height: 15px
+        background-image: url(../img/arrow.svg)
+        background-repeat: no-repeat
+        content: ''
+    &:hover
+        color: $addColor
+        background-color: #FFF
+        &:after
+            background-image: url(../img/arrow-hov.svg)
+    
+
+
+.slider
+    position: relative
+    height: 100vh
+    width: 100%
+    z-index: 0
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
