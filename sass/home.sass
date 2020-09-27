@@ -1,81 +1,155 @@
 $addColor: #67d352
+$white: #fafafa
     
 //Home page css settings
 .hero
-    display: flex
-    height: 100vh
-    align-items: center
-    &__text
-        position: absolute
-        top: 50%
-        left: 0
-        right: 0
-        padding: 0 15px
-        margin: 0 auto
-        transform: translateY(-50%)
-        color: #ffffff
-        z-index: 1
-        line-height: 1.5
-        h1
-            font-weight: 600
-            font-size: 4em
-            margin-top: 0
-        h2
-            font-weight: 400
-            font-size: 1.8em
-            color: rgba(255, 255, 255, 0.8)
-            margin-top: 0
-            margin-bottom: 0.5rem
-    &__btn
-        position: relative
-        font-size: 1.3em
-        font-weight: 500
-        color: #FFF
-        border: none
-        margin-left: 30px
-        padding: 6px 35px 10px 15px
-        background-color: #67D352
-        transition: all 0.3s ease
-        &:after
-            position: absolute
-            top: 50%
-            right: 10px
-            width: 19px
-            height: 15px
-            background-image: url(../img/arrow.svg)
-            background-repeat: no-repeat
-            content: ''
-        &:hover
-            color: $addColor
-            background-color: #FFF
-            &:after
-                background-image: url(../img/arrow-hov.svg)
+	display: flex
+	height: 100vh
+	align-items: center
+	&__text
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		padding: 0 15px
+		margin: 0 auto
+		transform: translateY(-50%)
+		color: #ffffff
+		z-index: 1
+		line-height: 1.5
+		h1
+			font-weight: 600
+			font-size: 4em
+			margin-top: 0
+		h2
+			font-weight: 400
+			font-size: 1.8em
+			color: rgba(255, 255, 255, 0.8)
+			margin-top: 0
+			margin-bottom: 0.5rem
+	&__btn
+		position: relative
+		font-size: 1.3em
+		font-weight: 500
+		color: #FFF
+		border: none
+		margin-left: 30px
+		padding: 6px 35px 10px 15px
+		background-color: #67D352
+		transition: all 0.3s ease
+		&:after
+			position: absolute
+			top: 50%
+			right: 10px
+			width: 19px
+			height: 15px
+			background-image: url(../img/arrow.svg)
+			background-repeat: no-repeat
+			content: ''
+		&:hover
+			color: $addColor
+			background-color: #FFF
+			&:after
+				background-image: url(../img/arrow-hov.svg)
 
 .slider
-    position: relative
-    height: 100vh
-    width: 100%
-    z-index: 0
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
+	position: relative
+	height: 100vh
+	width: 100%
+	z-index: 0
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
 
 .covidBanner
-    position: fixed
-    display: block
-    width: 100%
-    padding: 2em 0
-    background: #bbb
-    bottom: 0
-    z-index: 1
-    &__text
-        max-width: 873px
-        margin: auto
-    h1  
-        font-family: "Playfair Display", Arial, serif
-        font-size: 2em
-        margin: 0 1.5rem
-        color: #fff
-    p
-        font-size: 0.85em
-        margin: 1rem
+	position: fixed
+	display: block
+	width: 100%
+	padding: 2em 0
+	background: #bbb
+	bottom: 0
+	z-index: 1
+	&__text
+		max-width: 873px
+		margin: auto
+	h1  
+		font-family: "Playfair Display", Arial, serif
+		font-size: 2em
+		margin: 0 1.5rem
+		color: #fff
+	p
+		font-size: 0.85em
+		margin: 1rem
+
+.product
+	padding: 4rem 15px
+	background: $white
+	text-align: center
+	&__description
+		display: flex
+		justify-content: center
+		flex-direction: column
+	&__title
+		font-family: "Playfair Display", Arial, serif
+		font-size: 1.8em
+		color: #000
+		h2
+			margin-bottom: 1.5rem
+			font-weight: 300
+	&__text
+		max-width: 560px
+		align-self: center
+		&__rate
+			background: url(../img/rating.svg)
+			background-repeat: no-repeat
+			display: block
+			width: 100px
+			height: 15px
+			margin: 1.5rem auto
+		&__price
+			text-align: left
+			padding-left: 2rem
+			&--small-font
+				font-size: 12px
+				padding-left: 5px
+			&__btn
+				position: relative
+				display: inline-block
+				padding: 6px 15px
+				z-index: 0
+				letter-spacing: 0.5px
+				font-weight: 400
+				color: $white
+				transition: all 0.3s ease
+				&:before
+					background: url(../img/arrow-right.svg)
+					background-repeat: no-repeat
+					position: absolute
+					top: 55%
+					left: 88%
+					width: 18px
+					height: 18px
+					content: ''
+					transform: translateY(-50%)
+				&:after
+					position: absolute
+					top: 0
+					left: 0
+					bottom: 0
+					width: 110%
+					content: ''
+					background: $addColor
+					z-index: -1
+					transition: all 0.3s ease
+					box-sizing: border-box
+				&:hover
+					color: $addColor
+					&:before
+						background: url(../img/arrow-right-hover.svg)
+					&:after
+						background: $white
+						border: 2px solid $addColor
+
+					
+
+
