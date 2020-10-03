@@ -119,4 +119,8 @@ body {
   letter-spacing: 2px;
   color: #bbbbbb;
 }
+
+.nodis {
+  display: none;
+}
 /*# sourceMappingURL=base.css.map */

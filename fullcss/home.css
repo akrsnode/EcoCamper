@@ -214,4 +214,28 @@
   background: #fafafa;
   border: 2px solid #67d352;
 }
+
+.product__slider {
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
+.product__slider__stage {
+  padding: 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.product__slider__stage__item__img {
+  height: 80px;
+}
 /*# sourceMappingURL=home.css.map */
