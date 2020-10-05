@@ -1,5 +1,6 @@
 $addColor: #67d352
 $white: #fafafa
+$whiter: #fff
     
 //Home page css settings
 .hero
@@ -159,5 +160,23 @@ $white: #fafafa
 			flex-flow: row nowrap
 			justify-content: space-evenly
 			&__item__img
-				height: 80px
+			  height: 80px
 
+.recommend
+	padding: 4rem 15px
+	background: $whiter
+	text-align: center
+	&__description
+		display: flex
+		justify-content: center
+		flex-direction: column
+	&__title
+		font-family: "Playfair Display", Arial, serif
+		font-size: 1.8em
+		color: #000
+		h2
+			margin-bottom: 1.5rem
+			font-weight: 300
+	&__text
+		max-width: 600px
+		align-self: center

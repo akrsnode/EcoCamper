@@ -238,4 +238,41 @@
 .product__slider__stage__item__img {
   height: 80px;
 }
+
+.recommend {
+  padding: 4rem 15px;
+  background: #fff;
+  text-align: center;
+}
+
+.recommend__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recommend__title {
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 1.8em;
+  color: #000;
+}
+
+.recommend__title h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.recommend__text {
+  max-width: 600px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=home.css.map */

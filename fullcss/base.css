@@ -14,6 +14,11 @@ a {
   color: #FFF;
 }
 
+img {
+  height: auto;
+  width: auto;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
