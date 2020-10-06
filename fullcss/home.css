@@ -239,13 +239,13 @@
   height: 80px;
 }
 
-.recommend {
+.blog {
   padding: 4rem 15px;
   background: #fff;
   text-align: center;
 }
 
-.recommend__description {
+.blog__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,18 +258,17 @@
           flex-direction: column;
 }
 
-.recommend__title {
-  font-family: "Playfair Display", Arial, serif;
+.blog__description__title {
   font-size: 1.8em;
   color: #000;
 }
 
-.recommend__title h2 {
+.blog__description__title h2 {
   margin-bottom: 1.5rem;
   font-weight: 300;
 }
 
-.recommend__text {
+.blog__description__title__text {
   max-width: 600px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
