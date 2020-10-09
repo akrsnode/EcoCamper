@@ -119,6 +119,16 @@ body {
   opacity: 0.8;
 }
 
+.footer {
+  font-size: 14px;
+  background: #fa6b7b;
+  padding: 6em 0 4em 0;
+}
+
+.footer__wrapper {
+  margin: 0 10%;
+}
+
 .subheading {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;
