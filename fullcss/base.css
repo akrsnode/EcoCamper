@@ -148,15 +148,32 @@ body {
 }
 
 .footer__wrapper__column h2 {
-  margin-bottom: 3rem;
+  font-size: 1.4em;
+  margin-bottom: 2.5rem;
 }
 
 .footer__wrapper__column p, .footer__wrapper__column a {
   opacity: 0.7;
 }
 
+.footer__wrapper__column a:hover {
+  opacity: 1;
+}
+
 .footer__wrapper__column ul, .footer__wrapper__column li {
   padding-left: 0;
+}
+
+.footer__author {
+  display: table;
+  margin: 0 auto;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer__author p {
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .subheading {
