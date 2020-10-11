@@ -19,11 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-img {
-  height: auto;
-  width: auto;
-}
-
 body {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;

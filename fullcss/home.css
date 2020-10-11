@@ -23,12 +23,14 @@
 }
 
 .hero__text h1 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 4em;
   margin-top: 0;
 }
 
 .hero__text h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.8em;
   color: rgba(255, 255, 255, 0.8);

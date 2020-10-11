@@ -1,6 +1,8 @@
 $addColor: #67d352
 $white: #fafafa
 $whiter: #fff
+$serif: "Playfair Display", Arial, serif
+$sans-serif: "Poppins", Arial, Helvetica, sans-serif
     
 //Home page css settings
 .hero
@@ -19,10 +21,12 @@ $whiter: #fff
 		z-index: 1
 		line-height: 1.5
 		h1
+			font-family: $sans-serif
 			font-weight: 600
 			font-size: 4em
 			margin-top: 0
 		h2
+			font-family: $sans-serif
 			font-weight: 400
 			font-size: 1.8em
 			color: rgba(255, 255, 255, 0.8)
@@ -74,7 +78,7 @@ $whiter: #fff
 		max-width: 873px
 		margin: auto
 	h1  
-		font-family: "Playfair Display", Arial, serif
+		font-family: $serif
 		font-size: 2em
 		margin: 0 1.5rem
 		color: #fff
@@ -91,7 +95,7 @@ $whiter: #fff
 		justify-content: center
 		flex-direction: column
 	&__title
-		font-family: "Playfair Display", Arial, serif
+		font-family: $serif
 		font-size: 1.8em
 		color: #000
 		h2
