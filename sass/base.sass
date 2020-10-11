@@ -86,7 +86,7 @@ body
 .footer
 	font-size: 14px
 	background: #fa6b7b
-	padding: 6em 0 4em 0
+	padding: 6em 0 2em 0
 	&__wrapper
 		margin: 0 10% 3rem 10%
 		display: flex
@@ -106,6 +106,27 @@ body
 				opacity: 1
 			ul, li
 				padding-left: 0
+				.icon
+					width: 40px
+					font-size: 18px
+					padding-top: 2px
+					color: $whiter
+					opacity: 1
+			&__social
+				position: relative
+				width: 50px
+				height: 50px
+				display: inline-block
+				margin: 10px 10px 0 0 
+				border-radius: 50%
+				background: rgba(255, 255, 255, 0.05)
+				color: $whiter
+				font-size: 26px
+				span
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
 	&__author
 		display: table
 		margin: 0 auto
