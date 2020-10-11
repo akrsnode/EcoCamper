@@ -147,6 +147,14 @@ body {
   color: #fff;
 }
 
+.footer__wrapper__column--grid-center {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer__wrapper__column h2 {
   font-size: 1.4em;
   margin-bottom: 2.5rem;
@@ -161,12 +169,17 @@ body {
 }
 
 .footer__wrapper__column ul, .footer__wrapper__column li {
-  padding-left: 0;
+  padding: 0 0 10px 0;
+  display: table;
+}
+
+.footer__wrapper__column ul span, .footer__wrapper__column li span {
+  display: table-cell;
 }
 
 .footer__wrapper__column ul .icon, .footer__wrapper__column li .icon {
   width: 40px;
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 2px;
   color: #fff;
   opacity: 1;

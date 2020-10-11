@@ -97,6 +97,9 @@ body
 			margin-bottom: 1.5rem
 			padding: 0 1rem
 			color: $whiter
+			&--grid-center
+				display: grid
+				justify-content: center
 			h2
 				font-size: 1.4em
 				margin-bottom: 2.5rem
@@ -105,10 +108,13 @@ body
 			a:hover
 				opacity: 1
 			ul, li
-				padding-left: 0
+				padding: 0 0 10px 0
+				display: table
+				span
+					display: table-cell
 				.icon
 					width: 40px
-					font-size: 18px
+					font-size: 15px
 					padding-top: 2px
 					color: $whiter
 					opacity: 1
