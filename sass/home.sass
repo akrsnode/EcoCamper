@@ -151,6 +151,7 @@ $sans-serif: "Poppins", Arial, Helvetica, sans-serif
 					color: $addColor
 					&:before
 						background: url(../img/arrow-right-hover.svg)
+						background-repeat: no-repeat 
 					&:after
 						background: $white
 						border: 2px solid $addColor
@@ -159,12 +160,21 @@ $sans-serif: "Poppins", Arial, Helvetica, sans-serif
 		width: 100%
 		z-index: 1
 		&__stage
-			padding: 0 2em
+			padding: 3em 2em
 			display: flex
 			flex-flow: row nowrap
 			justify-content: space-evenly
-			&__item__img
-			  height: 80px
+			&__item
+				width: 40%
+				height: 300px
+				padding: 0 1em
+				&__img
+					width: 100%
+					height: 100%
+					display: block
+					background-position: center
+					background-size: cover
+
 
 .blog
 	padding: 4rem 15px
