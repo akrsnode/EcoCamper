@@ -30,10 +30,8 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 10%;
+  margin: 0 auto;
 }
 
 .navbar {

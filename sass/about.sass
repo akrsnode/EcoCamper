@@ -1,0 +1,45 @@
+$main-color: #404040
+$addColor: #67d352
+$white: #fafafa
+$whiter: #fff
+
+.hero
+	height: 60vh
+	position: relative
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	&__title
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		h1
+			color: $whiter
+			font-family: "Poppins", Arial, sans-serif
+			font-size: 35px
+			font-weight: 700
+
+.main
+	background: $white
+	margin: 0 auto
+	padding: 3rem 2rem
+	display: flex
+	flex-wrap: wrap
+	&__photo
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		flex: 0 0 42%
+		max-width: 42%
+		&__img
+			max-width: 400px
+			border-radius: 50%
+	&__text
+		padding: 3rem 2rem 3rem 6rem
+		flex: 0 0 58%
+		max-width: 58%
+		&__heading
+			padding: 0 0 2rem 3rem
+			font-size: 34px
+			font-weight: 400
