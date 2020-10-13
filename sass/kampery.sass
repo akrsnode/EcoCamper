@@ -3,7 +3,7 @@ $addColor: #67d352
 $white: #fafafa
 $whiter: #fff
 $grey: #bbb
-
+$lightGrey: #e6e6e6
 .main
   margin: 0 auto
   padding: 4em 1em
@@ -12,3 +12,82 @@ $grey: #bbb
     margin: 0 auto
     &__heading
       font-size: 2rem
+  &__slider
+    margin: 0 auto
+    width: 80%
+    height: auto
+    &__img
+      width: -moz-available
+  &__price
+    max-width: 340px
+    margin: 0 auto
+    padding: 1rem 0
+    text-align: center
+    &__text
+      padding: 1.5rem 0
+      border-top: 1px solid $lightGrey
+      &--highlight
+        font-size: 30px
+        color: $grey
+        font-weight: 400
+        padding-left: 15px
+      &--small
+        font-size: 1rem
+        color: $grey
+        font-weight: 300
+    &__btn
+      position: relative
+      display: inline-block
+      margin-right: 12px›
+      padding: 6px 15px
+      z-index: 0
+      letter-spacing: 0.5px
+      font-weight: 400
+      color: $white
+      transition: all 0.3s ease
+      &:before
+        background: url(../img/arrow-right.svg)
+        background-repeat: no-repeat
+        position: absolute
+        top: 55%
+        left: 88%
+        width: 18px
+        height: 18px
+        content: ''
+        transform: translateY(-50%)
+      &:after
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        width: 110%
+        content: ''
+        background: $addColor
+        z-index: -1
+        transition: all 0.3s ease
+        box-sizing: border-box
+      &:hover
+        color: $addColor
+        &:before
+          background: url(../img/arrow-right-hover.svg)
+          background-repeat: no-repeat 
+        &:after
+          background: $white
+          border: 2px solid $addColor
+  &__mockup
+    padding: 2rem 0
+    display: flex
+    flex-wrap: wrap
+    &__item
+      text-align: center
+      text-transform: uppercase
+      @media (min-width: 768px)
+        max-width: 100%
+        flex: 1 0
+      p
+        margin-bottom: 0
+        font-size: 20px
+      p:last-of-type
+        font-size: 14px
+      &__img
+        width: 100%
