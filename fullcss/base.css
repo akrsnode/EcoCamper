@@ -210,6 +210,47 @@ body {
   text-align: center;
 }
 
+.hero {
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero__title h1 {
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+@media (min-width: 567px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
 .subheading {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;

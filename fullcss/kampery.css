@@ -1,0 +1,14 @@
+.main {
+  margin: 0 auto;
+  padding: 4em 1em;
+}
+
+.main__text {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.main__text__heading {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=kampery.css.map */

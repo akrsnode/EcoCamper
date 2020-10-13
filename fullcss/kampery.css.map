@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,OAAO;CAKU;;AAJzB,AAAD,WAAO,CAAC;EACN,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,MAAM;CAEQ;;AADrB,AAAD,oBAAU,CAAC;EACT,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/kampery.sass"
+    ],
+    "names": [],
+    "file": "kampery.css"
+}
