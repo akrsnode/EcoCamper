@@ -66,4 +66,16 @@
   font-size: 34px;
   font-weight: 400;
 }
+
+.main__social {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__social__icon {
+  margin-right: 10px;
+  color: #bbb;
+}
 /*# sourceMappingURL=about.css.map */
