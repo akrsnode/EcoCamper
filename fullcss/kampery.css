@@ -10,7 +10,7 @@
 }
 
 .main__text__heading {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .main__slider {
@@ -137,5 +137,31 @@
 
 .main__mockup__item__img {
   width: 100%;
+}
+
+.spec {
+  padding: 6em 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+.spec__title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.spec a {
+  color: inherit;
+}
+
+.spec__table {
+  width: 100%;
+  margin-bottom: 3rem;
+  color: #606060;
+}
+
+.spec__table td {
+  border-bottom: 1px solid #bbb;
 }
 /*# sourceMappingURL=kampery.css.map */
