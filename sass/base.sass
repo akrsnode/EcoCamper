@@ -33,56 +33,53 @@ body
 	width: 100%
 	padding: 0 10%
 	margin: 0 auto
-//Navbar needs to be improved
+
 .navbar
-    display: flex
-    align-items: center
-    background: transparent
-    position: absolute
-    right: 0
-    left: 0
-    top: 20px
-    z-index: 3
-    padding: 0
-
-.navbar__container
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-wrap: nowrap
-
-.navbar--extend
-    flex-flow: row nowrap
-    justify-content: flex-start
+	display: flex
+	align-items: center
+	background: transparent
+	position: absolute
+	right: 0
+	left: 0
+	top: 20px
+	z-index: 3
+	padding: 0
+	&__container
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: nowrap
+	&--extend
+		flex-flow: row nowrap
+		justify-content: flex-start
 
 .menu
-    display: flex
-    flex-grow: 1
-    align-items: center
-    flex-basis: auto
-    flex-direction: row
-
-.menu__nav
-    display: flex
-    padding-left: 0
-    margin-bottom: 0
-    list-style: none
-    margin-left: auto
-
-.menu__nav__link
-    display: block
-    font-size: 0.85em
-    padding: .8rem 20px
-    font-weight: 300
-    &:hover
-        opacity: 0.8
+	display: flex
+	flex-grow: 1
+	align-items: center
+	flex-basis: auto
+	flex-direction: row
+	&__nav
+		display: flex
+		padding-left: 0
+		margin-bottom: 0
+		list-style: none
+		margin-left: auto
+		&__link
+			display: block
+			font-size: 0.85em
+			padding: .8rem 20px
+			font-weight: 300
+			&:hover
+					opacity: 0.8
 
 .footer
 	font-size: 14px
 	background: #fa6b7b
 	padding: 6em 0 2em 0
 	&__wrapper
-		margin: 0 10% 3rem 10%
+		margin: 0 10% 1rem 10%
 		display: flex
 		flex: wrap
 		&__column
@@ -163,6 +160,8 @@ body
 		max-width: 720px
 	@media (min-width: 992px)
 		max-width: 960px
+	@media (min-width: 1200px)
+		max-width: 1140px
 
 .subheading
 	font-family: "Poppins", Arial, Helvetica, sans-serif
