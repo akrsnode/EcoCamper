@@ -107,11 +107,15 @@ body {
   display: block;
   font-size: 0.85em;
   padding: .8rem 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .menu__nav__link:hover {
   opacity: 0.8;
+}
+
+.menu__nav__link--active {
+  color: #bbbbbb;
 }
 
 .footer {
