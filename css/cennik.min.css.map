@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/cennik.sass"
+    ],
+    "names": [],
+    "file": "cennik.min.css"
+}
