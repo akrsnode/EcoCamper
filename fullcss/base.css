@@ -30,7 +30,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -122,7 +122,6 @@ body {
   display: block;
   font-size: 0.85em;
   padding: .8rem 20px;
-  font-weight: 400;
 }
 
 .menu__nav__link:hover {
