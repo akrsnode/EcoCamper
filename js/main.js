@@ -5,11 +5,11 @@ let fixed = false;
 
 const changeNavbar = function() {
   if(fixed == false && scrollY > 120) {
+    fixed = true;
     navbarDiv.classList.add('navbar--extend-scrolled');
     menuLinks.forEach(elem => elem.classList.add('menu__nav__link--dark'));
   };
-  if(fixed == false && scrollY > 500) {
-    fixed = true;
+  if(fixed == true && scrollY > 500) {
     navbarDiv.classList.add('navbar--extend-fixed');
   };
   if(fixed == true && scrollY < 120) {
