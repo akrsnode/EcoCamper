@@ -4,4 +4,31 @@ $white: #fafafa
 $whiter: #fff
 $grey: #bbb
 $lightGrey: #e6e6e6
+$darkGrey: #595858
 
+.main
+  margin: 0 auto
+  padding: 4em 1em
+  &__prices
+    display: flex
+    flex-wrap: wrap
+    &__column
+      flex: 0 0 33.3%
+      padding: 0 15px
+      h2
+        font-size: 35px
+      &__text
+        text-align: center
+        &__details
+          border-top: 1px solid $lightGrey
+          padding-top: 15px
+          display: flex
+          align-items: center
+          justify-content: space-evenly
+          &--bold
+            font-size: 22px
+            font-weight: 400
+            color: $darkGrey
+            small
+              font-size: 13px
+              color: $grey
