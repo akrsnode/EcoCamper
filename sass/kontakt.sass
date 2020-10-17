@@ -1,0 +1,57 @@
+$main-color: #404040
+$addColor: #67d352
+$white: #fafafa
+$whiter: #fff
+$grey: #bbb
+$lightGrey: #e6e6e6
+$darkGrey: #595858
+
+@mixin mobile-view
+  @media (max-width: 767px)
+    position: relative
+    width: 100%
+    min-height: 1px
+
+.main
+  padding: 4em 0 6em 0
+  &__section
+    display: flex
+    flex-wrap: wrap
+    padding-bottom: 1rem
+    margin-bottom: 2rem
+    &:first-child
+      border-bottom: 1px solid $lightGrey
+    &__heading
+      flex: 0 0 100%
+      font-size: 1.5rem
+    &__column
+      flex: 0 0 50%
+      padding: 0 15px
+      &--bold
+        font-weight: 400
+      &__formElement
+        margin-bottom: 1rem
+        &__input
+          height: 52px
+          width: 100%
+          padding: 6px 12px
+          border: 1px solid $lightGrey
+          outline: none
+          font-size: 1rem
+          font-family: inherit
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+          &:active, &:focus
+            border-color: $main-color
+        textarea
+          height: auto
+        &__submit
+          text-align: center
+          &__btn
+            background: $addColor
+            box-shadow: 0 20px 30px 0 rgba(0,0,0,.2)
+            color: $whiter
+            padding: 16px 40px
+            font-size: 20px
+            font-weight: 400
+            border: 0
+            border-radius: 50px
