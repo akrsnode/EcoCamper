@@ -6,6 +6,12 @@ $grey: #bbb
 $lightGrey: #e6e6e6
 $darkGrey: #595858
 
+@mixin mobile-view
+  @media (max-width: 767px)
+    position: relative
+    width: 100%
+    min-height: 1px
+
 .main
   margin: 0 auto
   padding: 4em 1em
@@ -13,8 +19,10 @@ $darkGrey: #595858
     display: flex
     flex-wrap: wrap
     &__column
-      flex: 0 0 33.3%
-      padding: 0 15px
+      @include mobile-view
+      @media (min-width: 768px)
+        flex: 0 0 33.3%
+        padding: 0 15px
       h2
         font-size: 35px
       &__text
@@ -32,3 +40,29 @@ $darkGrey: #595858
             small
               font-size: 13px
               color: $grey
+  &__terms
+    padding: 20px 0
+    text-align: center
+    color: $grey
+    bold
+      font-weight: 400
+      color: $darkGrey
+      text-decoration: underline
+
+.service
+  padding: 6em 1em
+  background: $white
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    &__column
+      @include mobile-view
+      @media (min-width: 768px)
+        padding: 0 15px
+        flex: 0 0 33.3%
+      font-size: 1.5rem
+      &__text
+        font-size: 1rem
+        ul
+          padding-left: 0
+
