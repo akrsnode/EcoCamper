@@ -1,5 +1,5 @@
 .main {
-  padding: 4em 0 6em 0;
+  padding: 4em 0;
 }
 
 .main__section {
@@ -21,13 +21,33 @@
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   font-size: 1.5rem;
+  padding: 0 15px;
 }
 
-.main__section__column {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  padding: 0 15px;
+@media (max-width: 767px) {
+  .main__section__column {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__section__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    padding: 0 15px;
+  }
+}
+
+.main__section__column--hyperlink {
+  color: #404040;
+}
+
+.main__section__column--hyperlink:hover {
+  text-decoration: underline;
 }
 
 .main__section__column--bold {
@@ -59,6 +79,7 @@
 
 .main__section__column__formElement__submit {
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .main__section__column__formElement__submit__btn {
@@ -71,5 +92,10 @@
   font-weight: 400;
   border: 0;
   border-radius: 50px;
+}
+
+.main__section__column__formElement__submit__btn:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
 /*# sourceMappingURL=kontakt.css.map */

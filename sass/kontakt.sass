@@ -11,9 +11,10 @@ $darkGrey: #595858
     position: relative
     width: 100%
     min-height: 1px
+    padding: 0 15px
 
 .main
-  padding: 4em 0 6em 0
+  padding: 4em 0
   &__section
     display: flex
     flex-wrap: wrap
@@ -24,9 +25,16 @@ $darkGrey: #595858
     &__heading
       flex: 0 0 100%
       font-size: 1.5rem
-    &__column
-      flex: 0 0 50%
       padding: 0 15px
+    &__column
+      @include mobile-view
+      @media (min-width: 768px)
+        flex: 0 0 50%
+        padding: 0 15px
+      &--hyperlink
+        color: $main-color
+        &:hover
+          text-decoration: underline
       &--bold
         font-weight: 400
       &__formElement
@@ -46,6 +54,7 @@ $darkGrey: #595858
           height: auto
         &__submit
           text-align: center
+          padding-bottom: 3rem
           &__btn
             background: $addColor
             box-shadow: 0 20px 30px 0 rgba(0,0,0,.2)
@@ -55,3 +64,5 @@ $darkGrey: #595858
             font-weight: 400
             border: 0
             border-radius: 50px
+            &:hover
+              transform: scale(.96)
