@@ -12,15 +12,10 @@
 }
 
 .main__prices__column {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
   padding: 0 15px;
-}
-
-@media (max-width: 767px) {
-  .main__prices__column {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -89,15 +84,10 @@
 }
 
 .service__wrapper__column {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
   font-size: 1.5rem;
-}
-
-@media (max-width: 767px) {
-  .service__wrapper__column {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-  }
 }
 
 @media (min-width: 768px) {

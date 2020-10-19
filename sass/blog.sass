@@ -7,8 +7,31 @@ $lightGrey: #e6e6e6
 $darkGrey: #595858
 
 @mixin mobile-view
-  @media (max-width: 767px)
-    position: relative
-    width: 100%
-    min-height: 1px
+  position: relative
+  width: 100%
+  min-height: 1px
 
+.main
+  padding: 4em 15px
+  background: $whiter
+  display: flex
+  flex-wrap: wrap
+  &__article
+    @include mobile-view
+    @media (min-width: 768px)
+      flex: 0 0 66.6%
+      padding: 0 15px
+    h2
+      font-size: 1.8rem
+  &__sidebar
+    @include mobile-view
+    @media (min-width: 768px)
+      flex: 0 0 33.3%
+      padding: 0 15px
+    &__box
+      margin-bottom: 30px
+      padding: 25px
+      font-size: 15px
+      width: 100%
+
+ 

@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=blog.css.map */
+.main {
+  padding: 4em 15px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__article {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media (min-width: 768px) {
+  .main__article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6%;
+            flex: 0 0 66.6%;
+    padding: 0 15px;
+  }
+}
+
+.main__article h2 {
+  font-size: 1.8rem;
+}
+
+.main__sidebar {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media (min-width: 768px) {
+  .main__sidebar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3%;
+            flex: 0 0 33.3%;
+    padding: 0 15px;
+  }
+}
+
+.main__sidebar__box {
+  margin-bottom: 30px;
+  padding: 25px;
+  font-size: 15px;
+  width: 100%;
+}
+/*# sourceMappingURL=blog.css.map */
