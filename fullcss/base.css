@@ -154,7 +154,6 @@ body {
 
 @media (min-width: 768px) {
   .footer__wrapper {
-    margin: 0 10% 1rem 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,17 +170,12 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-bottom: 1.5rem;
-  padding: 0 1rem;
   color: #fff;
 }
 
 @media (min-width: 768px) {
   .footer__wrapper__column--grid-center {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
   }
 }
 
@@ -200,7 +194,6 @@ body {
 
 .footer__wrapper__column ul, .footer__wrapper__column li {
   padding: 0 0 10px 0;
-  display: table;
 }
 
 .footer__wrapper__column ul span, .footer__wrapper__column li span {
