@@ -58,13 +58,13 @@
       <div class="main__section__column">
         <form method="post" name="myemailform" action="form-to-email.php">
           <div class="main__section__column__formElement">
-            <input type="text" name="name" class="main__section__column__formElement__input" placeholder="Imię i Nazwisko">
+            <input type="text" name="name" class="main__section__column__formElement__input" placeholder="Imię i Nazwisko" required autocomplete="name">
           </div>
           <div class="main__section__column__formElement">
-            <input type="text" name="email" class="main__section__column__formElement__input" placeholder="Email">
+            <input type="text" name="email" class="main__section__column__formElement__input" placeholder="Email" required autocomplete="email">
           </div>
           <div class="main__section__column__formElement">
-            <input type="text" name="topic" class="main__section__column__formElement__input" placeholder="Temat">
+            <input type="text" name="topic" class="main__section__column__formElement__input" placeholder="Temat" required>
           </div>
           <div class="main__section__column__formElement">
             <textarea name="message" id="" cols="30" rows="7" class="main__section__column__formElement__input" placeholder="Wiadomość"></textarea>
@@ -80,7 +80,7 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper container">
       <div class="footer__wrapper__column">
         <h2>EcoCamper</h2>
         <p>Nasz pomysł powstał z miłości do podróżowania i chęci umożliwienia innym podróżowanie kamperem. Pamiętając jednocześnie o środowisku, gdyż to właśnie w naturę zapuszczamy się kamperem najczęściej.</p>
