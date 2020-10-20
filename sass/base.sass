@@ -3,6 +3,7 @@ $main-color: #404040
 $addColor: #67d352
 $white: #fafafa
 $whiter: #fff
+$darkGrey: #595858
 
 @mixin mobile-view
 	@media (max-width: 767px)
@@ -42,6 +43,9 @@ body
 	margin: 0 auto
 
 .navbar
+	@media (max-width: 768px)
+		top: 0
+		background: $whiter
 	display: flex
 	align-items: center
 	background: transparent
@@ -57,6 +61,21 @@ body
 		align-items: center
 		justify-content: space-between
 		flex-wrap: nowrap
+		&__logo
+			padding: 5px 0
+		&__brand
+			font-weight: 700
+			font-size: 20px
+			color: #111
+			padding: 5px 0
+		&__btn
+			border: none
+			color: $darkGrey
+			text-transform: uppercase
+			letter-spacing: .2em
+			font-size: 15px
+			background-color: transparent
+			cursor: pointer
 	&--extend
 		flex-flow: row nowrap
 		justify-content: flex-start
@@ -70,29 +89,26 @@ body
 			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
 			transition: .3s all ease-out
 
-.menu
-	display: flex
-	flex-grow: 1
+.menu__nav
 	align-items: center
 	flex-basis: auto
 	flex-direction: row
-	&__nav
-		display: flex
-		padding-left: 0
-		margin-bottom: 0
-		list-style: none
-		margin-left: auto
-		&__link
-			display: block
-			font-size: 0.85em
-			padding: .8rem 20px
-			&:hover
-				opacity: 0.8
-			&--active
-				color: rgb(187, 187, 187)
-			&--dark
-				padding: 15px 20px 
-				color: #000
+	display: flex
+	padding-left: 0
+	margin-bottom: 0
+	&__link
+		@media (max-width: 768px)
+			color: #000
+		display: block
+		font-size: 0.85em
+		padding: .8rem 20px
+		&:hover
+			opacity: 0.8
+		&--active
+			color: rgb(187, 187, 187)
+		&--dark
+			padding: 15px 20px 
+			color: #000
 
 .footer
 	font-size: 14px

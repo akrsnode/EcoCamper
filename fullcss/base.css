@@ -51,6 +51,13 @@ body {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    top: 0;
+    background: #fff;
+  }
+}
+
 .navbar__wrapper {
   width: 100%;
   display: -webkit-box;
@@ -64,6 +71,27 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.navbar__wrapper__logo {
+  padding: 5px 0;
+}
+
+.navbar__wrapper__brand {
+  font-weight: 700;
+  font-size: 20px;
+  color: #111;
+  padding: 5px 0;
+}
+
+.navbar__wrapper__btn {
+  border: none;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .navbar--extend {
@@ -91,13 +119,7 @@ body {
   transition: .3s all ease-out;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.menu__nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -107,22 +129,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
-  margin-left: auto;
 }
 
 .menu__nav__link {
   display: block;
   font-size: 0.85em;
   padding: .8rem 20px;
+}
+
+@media (max-width: 768px) {
+  .menu__nav__link {
+    color: #000;
+  }
 }
 
 .menu__nav__link:hover {

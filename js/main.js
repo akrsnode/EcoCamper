@@ -1,11 +1,17 @@
 //Changing navbar on scrolling
 const navbarDiv = document.querySelector('.navbar');
+const menuDiv = document.querySelector('.menu');
 const menuLinks = document.querySelectorAll('.menu__nav__link');
+const mainLogo = document.querySelector('#nav-logo');
+const logoText = document.querySelector('.navbar__wrapper__brand');
+const menuBtn = document.querySelector('.navbar__wrapper__btn');
 let fixed = false;
 
 const changeNavbar = function() {
   if(fixed == false && scrollY > 120) {
     fixed = true;
+    mainLogo.classList.toggle('nodis');
+    logoText.classList.toggle('nodis');
     navbarDiv.classList.add('navbar--extend-scrolled');
     menuLinks.forEach(elem => elem.classList.add('menu__nav__link--dark'));
   };
@@ -14,12 +20,18 @@ const changeNavbar = function() {
   };
   if(fixed == true && scrollY < 120) {
     fixed = false;
+    mainLogo.classList.toggle('nodis');
+    logoText.classList.toggle('nodis');
     navbarDiv.classList.remove('navbar--extend-fixed');
     navbarDiv.classList.remove('navbar--extend-scrolled');
     menuLinks.forEach(elem => elem.classList.remove('menu__nav__link--dark'));
   };
 };
 
+const toggleMenu = function() {
+  menuDiv.classList.toggle('nodis');
+  console.log('hejka');
+};
 //Event handling
-
+menuBtn.addEventListener("click", toggleMenu);
 window.addEventListener("scroll", changeNavbar);
