@@ -1,3 +1,7 @@
+h2 {
+  margin-top: 0;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
