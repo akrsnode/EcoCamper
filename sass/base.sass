@@ -117,19 +117,16 @@ body
 	&__wrapper
 		@include mobile-view
 		@media (min-width: 768px)
-			margin: 0 10% 1rem 10%
 			display: flex
 			flex: wrap
 		&__column
 			flex-basis: 0
 			flex-grow: 1
 			margin-bottom: 1.5rem
-			padding: 0 1rem
 			color: $whiter
 			&--grid-center
 				@media (min-width: 768px)
-					display: grid
-					justify-content: center
+					text-align: center
 			h2
 				font-size: 1.4em
 				margin-bottom: 40px
@@ -139,7 +136,6 @@ body
 				opacity: 1
 			ul, li
 				padding: 0 0 10px 0
-				display: table
 				span
 					display: table-cell
 				.icon
