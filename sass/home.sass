@@ -89,6 +89,30 @@ h2
 		font-size: 0.85em
 		margin: 1rem
 
+.services
+	padding: 4em 0
+	display: flex
+	flex-wrap: wrap
+	&__item
+		align-self: stretch
+		display: block
+  	position: relative
+  	width: 100%
+		text-align: center
+  	min-height: 1px
+		padding: 0 15px
+		@media (min-width: 768px)
+			flex: 0 0 50%
+		@media (min-width: 992px)
+			flex: 0 0 25%
+		&__icon
+			width: 50px
+			opacity: .5
+		&__heading
+			font-weight: 400
+			font-size: 24px
+			margin-bottom: 20px
+
 .product
 	padding: 4rem 15px
 	background: $white
