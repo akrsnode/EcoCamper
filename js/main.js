@@ -1,6 +1,6 @@
 //Changing navbar on scrolling
 const navbarDiv = document.querySelector('.navbar');
-const menuDiv = document.querySelector('.menu');
+const menuDiv = document.querySelector('.menu__nav');
 const menuLinks = document.querySelectorAll('.menu__nav__link');
 const mainLogo = document.querySelector('#nav-logo');
 const logoText = document.querySelector('.navbar__wrapper__brand');

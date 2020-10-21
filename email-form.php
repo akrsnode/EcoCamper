@@ -27,11 +27,11 @@ $email_subject = "Formularz kontaktowy:\n $topic";
 $email_body = "Wiadomość od $name.\n".
     "\n $message".
 
-$to = "kontakt@ecocamper.eu";//<== update the email address
+$to = "vansmoe@hotmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
-mail($to,$email_subject,$email_body,$headers);
+$sent_mail = mail($to,$email_subject,$email_body,$headers);
 
 
 // Function to validate against any email injection attempts
@@ -55,6 +55,13 @@ function IsInjected($str)
     {
     return false;
   }
+}
+
+//Return to contact page
+if ($sent_mail)
+{
+    header("Location: kontakt.html");
+    exit;
 }
 
 ?>
