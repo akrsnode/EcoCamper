@@ -361,6 +361,10 @@ h2 {
   padding: 0 15px;
 }
 
+.blog__slider__item:hover {
+  opacity: .7;
+}
+
 .blog__slider__item h3 a {
   font-size: 24px;
   color: #000;

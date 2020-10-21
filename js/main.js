@@ -32,6 +32,13 @@ const toggleMenu = function() {
   menuDiv.classList.toggle('nodis');
   console.log('hejka');
 };
+
 //Event handling
 menuBtn.addEventListener("click", toggleMenu);
 window.addEventListener("scroll", changeNavbar);
+
+//Section slide
+document.querySelector('.hero-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+});
