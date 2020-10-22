@@ -69,8 +69,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .navbar__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .navbar__wrapper__logo {
@@ -92,6 +97,12 @@ body {
   font-size: 15px;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar__wrapper__btn {
+    display: none;
+  }
 }
 
 .navbar--extend {
@@ -134,6 +145,13 @@ body {
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .menu__nav {
+    display: none;
+    width: 100%;
+  }
 }
 
 .menu__nav__link {
@@ -331,5 +349,9 @@ body {
 
 .nodis {
   display: none;
+}
+
+.dispblock {
+  display: block;
 }
 /*# sourceMappingURL=base.css.map */

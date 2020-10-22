@@ -56,11 +56,12 @@ body
 	z-index: 3
 	padding: 0
 	&__wrapper
+		@media (max-width: 768px)
+			flex-wrap: wrap
 		width: 100%
 		display: flex
 		align-items: center
 		justify-content: space-between
-		flex-wrap: nowrap
 		&__logo
 			padding: 5px 0
 		&__brand
@@ -69,6 +70,8 @@ body
 			color: #111
 			padding: 5px 0
 		&__btn
+			@media (min-width: 768px)
+				display: none
 			border: none
 			color: $darkGrey
 			text-transform: uppercase
@@ -96,6 +99,9 @@ body
 	display: flex
 	padding-left: 0
 	margin-bottom: 0
+	@media (max-width: 768px)
+		display: none
+		width: 100%
 	&__link
 		@media (max-width: 768px)
 			color: #000
@@ -217,3 +223,6 @@ body
 
 .nodis
 	display: none
+
+.dispblock
+	display: block
