@@ -222,10 +222,9 @@ h2
 			max-width: 600px
 			align-self: center
 	&__slider
-		display: flex
-		flex-wrap: wrap
-		margin: 0 auto
-		max-width: 1140px
+		@media (min-width: 992px)
+			display: flex
+			flex-wrap: wrap
 		&__item
 			flex: 0 0 33.333%
 			margin-bottom: 60px

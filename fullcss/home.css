@@ -342,14 +342,14 @@ h2 {
       align-self: center;
 }
 
-.blog__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1140px;
+@media (min-width: 992px) {
+  .blog__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .blog__slider__item {
