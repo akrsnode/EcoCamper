@@ -98,4 +98,33 @@
   -webkit-transform: scale(0.96);
           transform: scale(0.96);
 }
+
+.hero__sentBanner {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: .7s all ease-out;
+  transition: .7s all ease-out;
+}
+
+.hero__sentBanner--showed {
+  top: 100px;
+}
+
+.hero__sentBanner__text {
+  max-width: 389px;
+  padding: 1em 3em;
+  margin: 0 15px;
+  font-size: 13px;
+  border-radius: 54px;
+  text-align: center;
+  line-height: normal;
+  color: #fff;
+  background: #67d352;
+}
 /*# sourceMappingURL=kontakt.css.map */

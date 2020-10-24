@@ -60,7 +60,7 @@ function IsInjected($str)
 //Return to contact page
 if ($sent_mail)
 {
-    header("Location: kontakt.html");
+    header("Location: kontakt-sent.html");
     exit;
 }
 

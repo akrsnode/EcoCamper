@@ -66,3 +66,24 @@ $darkGrey: #595858
             border-radius: 50px
             &:hover
               transform: scale(.96)
+
+.hero__sentBanner
+  position: absolute
+  top: -100px
+  left: 50%
+  transform: translate(-50%, 0)
+  width: fit-content
+  transition: .7s all ease-out
+  &--showed
+    top: 100px
+  &__text
+    max-width: 389px
+    padding: 1em 3em
+    margin: 0 15px
+    font-size: 13px
+    border-radius: 54px
+    text-align: center
+    line-height: normal
+    color: $whiter
+    background: $addColor
+

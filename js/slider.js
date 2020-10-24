@@ -16,13 +16,22 @@ const changeSlide = () => {
 		slideIndex += i;
 		if(slideIndex >= sliderItems.length) slideIndex = 0;
 		sliderItems[slideIndex].classList.remove('nodis');
-		console.log(slideIndex + " slideind");
 	}
 };
 
 const clearSlide = () => {
 	sliderItems.forEach(elem => elem.classList.add('nodis'));
 };
+
+const refreshSlide = () => {
+	clearSlide();
+	for(let i = 0; i < stageQuantity; i++) {
+		slideIndex = i;
+		if(slideIndex >= sliderItems.length) slideIndex = 0;
+		sliderItems[slideIndex].classList.remove('nodis');
+		console.log(slideIndex + " slideind");
+	}
+}
 
 const runSlider = () => {
 	clearSlide();
@@ -45,11 +54,10 @@ const addButtons = () => {
 const setStageQuantity = function() {
 	if(this.innerWidth >= 1200) {
 		stageQuantity = 3;
-		runSlider();
 	} else if(this.innerWidth >= 768) {
 		stageQuantity = 2;
-		runSlider();
 	} else stageQuantity  = 1;
+	refreshSlide();
 }
 
 //Render
