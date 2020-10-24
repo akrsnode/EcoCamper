@@ -15,12 +15,12 @@
 
 .main__slider {
   margin: 0 auto;
-  width: 80%;
-  height: auto;
+  padding: 5%;
+  max-width: 700px;
 }
 
 .main__slider__img {
-  width: -moz-available;
+  width: 100%;
 }
 
 .main__price {

@@ -11,11 +11,12 @@ let navigate = document.getElementById('slider').getAttribute('data-nav');
 let slideIndex = 0;
 let stageQuantity = 1;
 
-const changeSlide = (ind) => {
+const changeSlide = () => {
 	for(let i = 0; i < stageQuantity; i++) {
-		ind += i;
-		if(ind >= sliderItems.length) ind = 0;
-		sliderItems[ind].classList.remove('nodis');
+		slideIndex += i;
+		if(slideIndex >= sliderItems.length) slideIndex = 0;
+		sliderItems[slideIndex].classList.remove('nodis');
+		console.log(slideIndex + " slideind");
 	}
 };
 
@@ -25,7 +26,8 @@ const clearSlide = () => {
 
 const runSlider = () => {
 	clearSlide();
-	changeSlide(slideIndex++);
+	changeSlide();
+	slideIndex++;
 };
 
 slideInterval = setInterval(runSlider, stageTime);
@@ -41,11 +43,13 @@ const addButtons = () => {
 
 //Stage quantity
 const setStageQuantity = function() {
-	clearSlide();
-	if(this.innerWidth >= 1200) stageQuantity = 3;
-	else if(this.innerWidth >= 768) stageQuantity = 2;
-	else stageQuantity  = 1;
-	changeSlide(slideIndex);
+	if(this.innerWidth >= 1200) {
+		stageQuantity = 3;
+		runSlider();
+	} else if(this.innerWidth >= 768) {
+		stageQuantity = 2;
+		runSlider();
+	} else stageQuantity  = 1;
 }
 
 //Render
@@ -59,7 +63,10 @@ if(navigate == "true") {
 	document.querySelectorAll('#slider-nav-btn').forEach((item, index) => item.addEventListener('click', function() {
 		clearInterval(slideInterval);
 		clearSlide();
-		changeSlide(index);
+		slideIndex = index;
+		changeSlide();
 		slideInterval = setInterval(runSlider, stageTime);
 	}))	
-}
+};
+
+runSlider();
