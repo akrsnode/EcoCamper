@@ -1,6 +1,9 @@
 $addColor: #67d352
 $white: #fafafa
 $whiter: #fff
+$darkGrey: #595858
+$lightGrey: #e6e6e6
+
 $serif: "Playfair Display", Arial, serif
 $sans-serif: "Poppins", Arial, Helvetica, sans-serif
 
@@ -115,7 +118,7 @@ h2
 			margin-bottom: 20px
 
 .product
-	padding: 4rem 15px
+	padding: 4rem 0
 	background: $white
 	text-align: center
 	&__description
@@ -188,20 +191,33 @@ h2
 		width: 100%
 		z-index: 1
 		&__stage
-			padding: 3em 2em
-			display: flex
-			flex-flow: row nowrap
-			justify-content: space-evenly
+			padding: 3em 0
+			width: 100%
+			@media (min-width: 768px)
+				display: flex
+				flex-wrap: wrap
 			&__item
-				width: 40%
 				height: 300px
-				padding: 0 1em
+				max-width: 550px
+				flex-basis: 50%
+				@media (min-width: 768px)
+					padding: 0 2%
+				@media (min-width: 1200px)
+					flex-basis: 33%
 				&__img
 					width: 100%
 					height: 100%
 					display: block
 					background-position: center
 					background-size: cover
+		&__nav__btn
+			color: $lightGrey
+			border: none
+			background: none
+			outline: none
+			&:hover
+				color: $darkGrey
+
 
 .blog
 	padding: 4rem 15px
@@ -222,10 +238,9 @@ h2
 			max-width: 600px
 			align-self: center
 	&__slider
-		display: flex
-		flex-wrap: wrap
-		margin: 0 auto
-		max-width: 1140px
+		@media (min-width: 992px)
+			display: flex
+			flex-wrap: wrap
 		&__item
 			flex: 0 0 33.333%
 			margin-bottom: 60px
