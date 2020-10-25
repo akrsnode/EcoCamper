@@ -11,6 +11,10 @@ $darkGrey: #595858
   width: 100%
   min-height: 1px
 
+.img
+  height: 60vw
+  max-height: 500px
+
 .main
   padding: 4em 15px
   background: $whiter
@@ -18,20 +22,22 @@ $darkGrey: #595858
   flex-wrap: wrap
   &__article
     @include mobile-view
-    @media (min-width: 768px)
+    @media (min-width: 981px)
       flex: 0 0 66.6%
       padding: 0 15px
     h2
       font-size: 1.8rem
-    ol li::marker
-      font-family: "Playfair Display"
-      font-weight: 500
-      font-size: 30px
-      line-height: 1.2
-      color: $main-color
+    ol li
+      list-style: decimal
+      &::marker
+        font-family: "Playfair Display"
+        font-weight: 500
+        font-size: 30px
+        line-height: 1.2
+        color: $main-color
   &__sidebar
     @include mobile-view
-    @media (min-width: 768px)
+    @media (min-width: 981px)
       flex: 0 0 33.3%
       padding: 0 15px
     &__box
@@ -56,6 +62,9 @@ $darkGrey: #595858
           display: block
           color: $darkGrey
           font-size: 12px
+
+.tagcloud
+  margin: 3rem 0
 
 .tag-item
   display: inline-block
