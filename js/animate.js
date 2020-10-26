@@ -1,0 +1,1 @@
+const animatedItems = [...document.querySelectorAll('section')];
