@@ -102,14 +102,17 @@
 .hero__sentBanner {
   position: absolute;
   top: -100px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   -webkit-transition: .7s all ease-out;
   transition: .7s all ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero__sentBanner--showed {
