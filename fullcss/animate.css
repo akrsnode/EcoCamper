@@ -34,7 +34,7 @@
 }
 
 .animated-fadeInUp {
-  -webkit-animation: fadeInUp .5s 1s both;
-          animation: fadeInUp .5s 1s both;
+  -webkit-animation: fadeInUp .5s 0.2s both;
+          animation: fadeInUp .5s 0.2s both;
 }
 /*# sourceMappingURL=animate.css.map */
