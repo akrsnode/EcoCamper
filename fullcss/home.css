@@ -61,7 +61,7 @@ h2 {
   right: 10px;
   width: 19px;
   height: 15px;
-  background-image: url(../img/arrow.svg);
+  background-image: url(../img/icons/arrow.svg);
   background-repeat: no-repeat;
   content: '';
 }
@@ -72,7 +72,7 @@ h2 {
 }
 
 .hero__btn:hover:after {
-  background-image: url(../img/arrow-hov.svg);
+  background-image: url(../img/icons/arrow-hov.svg);
 }
 
 .slider {
@@ -199,7 +199,7 @@ h2 {
 }
 
 .product__text__rate {
-  background: url(../img/rating.svg);
+  background: url(../img/icons/rating.svg);
   background-repeat: no-repeat;
   display: block;
   width: 100px;
@@ -230,7 +230,7 @@ h2 {
 }
 
 .product__text__price__btn:before {
-  background: url(../img/arrow-right.svg);
+  background: url(../img/icons/arrow-right.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 55%;
@@ -262,7 +262,7 @@ h2 {
 }
 
 .product__text__price__btn:hover:before {
-  background: url(../img/arrow-right-hover.svg);
+  background: url(../img/icons/arrow-right-hover.svg);
   background-repeat: no-repeat;
 }
 

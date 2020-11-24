@@ -24,10 +24,9 @@ if(IsInjected($visitor_email))
 
 $email_from = 'form@ecocamper.eu';//<== update the email address
 $email_subject = "Formularz kontaktowy:\n $topic";
-$email_body = "Wiadomość od $name.\n".
-    "\n $message".
+$email_body = "Wiadomość od $name.\n Wiadomość: \n $message";
 
-$to = "vansmoe@hotmail.com";//<== update the email address
+$to = "kontakt@ecocamper.eu";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!

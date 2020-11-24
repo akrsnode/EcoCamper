@@ -9,7 +9,9 @@
 	<meta name="keywords" content="wynajem, caravan, kamper, warszawa, caravaning, camper, camp, van, eco, camper, ecocamper">
 	
 	<link rel="stylesheet" href="css/base.min.css">
-	<link rel="stylesheet" href="css/kontakt.min.css">
+  <link rel="stylesheet" href="css/kontakt.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
 </head>
 <body>
   <nav class="navbar navbar--extend">
@@ -26,12 +28,14 @@
         </ul>
 		</div>
 	</nav>
-  <section class="hero" style="background-image: url(img/kontakt-bg.jpg);">
-		<div class="hero__title">
-			<h1>Kontakt</h1>
-    </div>
-    <div class="hero__sentBanner">
-      <div class="hero__sentBanner__text">Dziękujemy za wysłanie wiadomości. Odpowiemy najszybciej jak to możliwe.</div>
+  <section id="hero">
+    <div class="hero" style="background-image: url(img/kontakt-bg.jpg);">
+      <div class="hero__title">
+        <h1>Kontakt</h1>
+      </div>
+      <div class="hero__sentBanner">
+        <div class="hero__sentBanner__text">Dziękujemy za wysłanie wiadomości. Odpowiemy najszybciej jak to możliwe.</div>
+      </div>
     </div>
   </section>
   <section class="main container">
@@ -117,6 +121,7 @@
     </div>
 	</footer>
   <script src="js/main.js"></script>
-  <script src="js/popup-mail.js"></script>
+  <script src="js/popup-mail.js" defer></script>
+  <script src="js/animate.js" defer></script>
 	<script src="https://kit.fontawesome.com/f93f3d3dc5.js" crossorigin="anonymous"></script>
 </body>

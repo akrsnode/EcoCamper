@@ -29,7 +29,6 @@ const refreshSlide = () => {
 		slideIndex = i;
 		if(slideIndex >= sliderItems.length) slideIndex = 0;
 		sliderItems[slideIndex].classList.remove('nodis');
-		console.log(slideIndex + " slideind");
 	}
 }
 
