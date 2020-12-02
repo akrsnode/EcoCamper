@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 if(!isset($_POST['submit']))
 {
 	//This page should not be accessed directly. Need to submit the form.
@@ -23,15 +24,16 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = 'form@ecocamper.eu';//<== update the email address
-$email_subject = "Formularz kontaktowy:\n $topic";
-$email_body = "Wiadomość od $name.\n Wiadomość: \n $message";
+$email_subject = "$topic";
+$email_body = "$name: \n $message";
 
 $to = "kontakt@ecocamper.eu";//<== update the email address
-$headers = "From: $email_from \r\n";
+$headers = 'Content-Type: text/html; charset=utf-8' . "\r\n";
+$headers .= "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 $sent_mail = mail($to,$email_subject,$email_body,$headers);
-
+// mail($to,$email_subject,$email_body,$headers);
 
 // Function to validate against any email injection attempts
 function IsInjected($str)
@@ -56,7 +58,8 @@ function IsInjected($str)
   }
 }
 
-//Return to contact page
+// Return to contact page
+
 if ($sent_mail)
 {
     header("Location: kontakt-sent.html");
