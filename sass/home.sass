@@ -1,5 +1,6 @@
 $addColor: #67d352
 $white: #fafafa
+$white2: #fcfcfc
 $whiter: #fff
 $darkGrey: #595858
 $lightGrey: #e6e6e6
@@ -83,7 +84,7 @@ h2
 	&__text
 		max-width: 873px
 		margin: auto
-	h1  
+	h1
 		font-family: $serif
 		font-size: 2em
 		margin: 0 1.5rem
@@ -99,10 +100,10 @@ h2
 	&__item
 		align-self: stretch
 		display: block
-  	position: relative
-  	width: 100%
+		position: relative
+		width: 100%
 		text-align: center
-  	min-height: 1px
+		min-height: 1px
 		padding: 0 15px
 		margin-bottom: 40px
 		@media (min-width: 768px)
@@ -116,6 +117,34 @@ h2
 			font-weight: 400
 			font-size: 24px
 			margin-bottom: 20px
+
+.reservations
+	padding: 4rem 0
+	background: $white2
+	&__content
+		display: flex
+		flex-direction: row
+		@media (max-width: 992px)
+			flex-direction: column
+			align-items: center
+			text-align: center
+	&__description
+		padding: 2rem
+		max-width: 500px
+		h2
+			margin-bottom: 1.5rem
+			font-size: 1.8em
+			font-weight: 300
+		a
+			font-weight: 400
+			color: #404040
+	&__calendar
+		border: none
+		width: 100%
+		height: 50vh
+		max-width: 600px
+		@media (min-width: 768px)
+			height: 540px
 
 .product
 	padding: 4rem 0
@@ -182,7 +211,7 @@ h2
 					color: $addColor
 					&:before
 						background: url(../img/icons/arrow-right-hover.svg)
-						background-repeat: no-repeat 
+						background-repeat: no-repeat
 					&:after
 						background: $white
 						border: 2px solid $addColor
@@ -217,7 +246,6 @@ h2
 			outline: none
 			&:hover
 				color: $darkGrey
-
 
 .blog
 	padding: 4rem 15px
