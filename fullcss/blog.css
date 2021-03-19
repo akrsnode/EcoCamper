@@ -44,6 +44,11 @@
   color: #404040;
 }
 
+.main__article a {
+  color: #595858;
+  text-decoration: underline;
+}
+
 .main__sidebar {
   position: relative;
   width: 100%;
