@@ -356,4 +356,8 @@ body {
 .dispblock {
   display: block;
 }
+
+.dark {
+  color: #000;
+}
 /*# sourceMappingURL=base.css.map */
