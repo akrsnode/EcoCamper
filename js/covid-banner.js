@@ -5,5 +5,7 @@ function fixedCovidBanner() {
 };
 
 document.onscroll = () => {
-  if(scrollY >  covidBanner.scrollHeight) fixedCovidBanner()
-}
+  if(scrollY >  covidBanner.scrollHeight) fixedCovidBanner();
+};
+
+setTimeout(fixedCovidBanner, 5000);

@@ -35,8 +35,14 @@ h2 {
 .hero__text h1 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3rem;
   margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  .hero__text h1 {
+    font-size: 4rem;
+  }
 }
 
 .hero__text h2 {
