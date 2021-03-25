@@ -47,6 +47,7 @@ body {
   right: 0;
   left: 0;
   top: 20px;
+  max-width: 100vw;
   z-index: 3;
   padding: 0;
 }
@@ -153,6 +154,7 @@ body {
   .menu__nav {
     display: none;
     width: 100%;
+    background: #fff;
   }
 }
 
@@ -355,5 +357,9 @@ body {
 
 .dispblock {
   display: block;
+}
+
+.dark {
+  color: #000;
 }
 /*# sourceMappingURL=base.css.map */

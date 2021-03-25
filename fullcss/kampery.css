@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .main {
   margin: 0 auto;
-  padding: 4em 1em;
+  padding: 8rem 1em 4em 1em;
 }
 
 .main__text {
